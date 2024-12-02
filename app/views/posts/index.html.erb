@@ -1,0 +1,23 @@
+<div id="header">
+  <p class="main-title">Meu Blog</p>
+  <p class="text-muted">Bem-vindo ao meu blog pessoal!</p>
+</div>
+
+<div id="main-container">
+  <h2>Posts Recentes</h2>
+
+  <% if @posts.present? %>
+    <ul>
+      <% @posts.each do |post| %>
+        <li><%= link_to post.title, post_path(post), class: "button-list" %></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>Não há posts disponíveis.</p>
+  <% end %>
+
+  
+  <p>____________________</p><br />
+
+  <%= link_to "Novo Post", new_post_path, class: "button-primary" %>
+</div>

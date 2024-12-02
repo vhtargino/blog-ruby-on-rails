@@ -1,0 +1,156 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+
+  .main-title {
+    color: white;
+    font-size: 2.1rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 1rem;
+  }
+  
+/* Botões na lista de posts */
+.button-list {
+    background-color: transparent; /* Sem fundo */
+    border: 2px solid #8B0000; /* Contorno vermelho escuro */
+    color: black; /* Texto preto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .button-list:hover {
+    background-color: #8B0000; /* Fundo vermelho escuro ao passar o mouse */
+    color: white; /* Texto branco */
+  }
+  
+  /* Botões de criar novo post e voltar */
+  .button-primary {
+    background-color: #8B0000; /* Fundo vermelho escuro */
+    color: white; /* Texto branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .button-primary:hover {
+    background-color: #660000; /* Tom mais escuro de vermelho ao passar o mouse */
+  }
+  
+  #main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza texto e elementos internos */
+    margin-bottom: 3rem;
+  }
+  
+  form {
+    display: inline-block; /* Centraliza o formulário dentro do contêiner */
+    text-align: left; /* Mantém os textos do formulário alinhados à esquerda */
+  }
+
+  #header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .text-muted {
+    color: #6c757d;
+  }
+
+  /* Lista de posts */
+ul {
+    list-style: none; /* Remove bulletpoints */
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 1.5rem; /* Espaço entre os itens */
+  }
+
+  .button-danger {
+    background-color: #dc3545; /* Vermelho */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button-danger:hover {
+    background-color: #a71d2a; /* Vermelho mais escuro */
+}
+
+/* Ajuste do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Espaçamento entre os campos */
+  max-width: 500px; /* Limita a largura do formulário */
+  width: 100%; /* Garante que ele ocupe toda a largura disponível até o limite */
+  margin: 0 auto; /* Centraliza o formulário horizontalmente */
+  padding: 20px;
+  background-color: #f7f7f7; /* Fundo claro */
+  border: 1px solid #ddd; /* Contorno leve */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+/* Estilo para campos de entrada e área de texto */
+form input[type="text"],
+form textarea {
+  width: 95.5%; /* Ajuste para ocupar toda a largura do formulário */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  resize: vertical; /* Permite redimensionar apenas verticalmente a textarea */
+}
+
+/* Estilo para o botão de envio */
+form .button-primary {
+  align-self: center; /* Centraliza o botão dentro do formulário */
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Ajuste de alinhamento */
+form .button-primary:hover {
+  background-color: #660000;
+}

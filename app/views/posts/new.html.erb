@@ -1,0 +1,28 @@
+<div id="header">
+  <p class="main-title">Meu Blog</p>
+  <p class="text-muted">Bem-vindo ao meu blog pessoal!</p>
+</div>
+
+<div id="main-container">
+  <h1>Novo Post</h1>
+
+  <%= form_with model: @post do |form| %>
+    <div>
+      <%= form.label :title %><br>
+      <%= form.text_field :title %>
+    </div>
+
+    <div>
+      <%= form.label :content %><br>
+      <%= form.text_area :content %>
+    </div>
+
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+
+    <p>____________________</p><br />
+
+  <%= link_to '<<<', root_path, class: "button-primary" %>
+</div>

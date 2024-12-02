@@ -1,0 +1,15 @@
+<div id="header">
+  <p class="main-title">Meu Blog</p>
+  <p class="text-muted">Bem-vindo ao meu blog pessoal!</p>
+</div>
+
+<div id="main-container">
+  <h1><%= @post.title %></h1>
+  <p><%= @post.content %></p>
+
+  <p>____________________</p><br />
+
+  <%= link_to '<<<', root_path, class: "button-primary" %>
+  <%= link_to "Editar Post", edit_post_path(@post), class: 'button-list' %>
+  <%= link_to "Deletar Post", post_path(@post), data: { turbo_method: :delete, turbo_confirm: "Tem certeza?" }, class: 'button-danger' %>
+</div>
